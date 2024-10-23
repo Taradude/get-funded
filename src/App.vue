@@ -1,18 +1,84 @@
 <template>
-  <div class="animated-gradient">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
+  <div id="app">
+    <!-- Прелоадер -->
+    <div class="preloader" v-if="isLoading">
+      <div class="preloader-text">{{ displayedText }}</div>
+    </div>
+
+    <!-- Основний контент сайту -->
+    <div v-else class="animated-gradient">
+      <nav>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </nav>
+      <router-view />
+    </div>
   </div>
 </template>
 
-<style lang="scss">
-body {
-  padding: 0;
-  margin: 0;
+<script>
+export default {
+  data() {
+    return {
+      isLoading: true, // Стан для прелоадера
+      fullText: 'Best time to change your life - was yesterday', // Текст для анімації друкування
+      displayedText: '', // Текст, який відображається
+      typingSpeed: 100, // Швидкість друкування
+    }
+  },
+  mounted() {
+    // Анімація друкування тексту
+    this.typeText(0)
+
+    // Затримка перед зникненням прелоадера
+    setTimeout(() => {
+      this.isLoading = false
+    }, 7000) // Прелоадер триватиме 7 секунд
+  },
+  methods: {
+    // Метод для поступового друкування тексту
+    typeText(index) {
+      if (index < this.fullText.length) {
+        this.displayedText += this.fullText[index]
+        setTimeout(() => {
+          this.typeText(index + 1)
+        }, this.typingSpeed)
+      }
+    },
+  },
 }
+</script>
+
+<style lang="scss">
+/* Прелоадер */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out; /* Плавне зникнення */
+}
+
+.preloader-text {
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace; /* Стиль для анімації друкування */
+}
+
+/* Коли прелоадер зникає, його opacity зменшується */
+.preloader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Фон */
 .animated-gradient {
   margin: 0;
   width: 100%;
@@ -23,6 +89,7 @@ body {
   animation: gradient-animation 16s ease infinite;
 }
 
+/* Анімація фону */
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -34,6 +101,12 @@ body {
     background-position: 0% 50%;
   }
 }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
