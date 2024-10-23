@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "three": "^0.169.0",
+    "vanta": "^0.5.24",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.3",
@@ -47,12 +49,20 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "prettier/prettier": 0
+    }
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 110
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not dead",
-    "not ie 11"
+    "not dead"
   ]
 }
