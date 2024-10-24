@@ -52,7 +52,6 @@ export default {
 <style lang="scss">
 /* Прелоадер */
 .preloader {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -62,6 +61,7 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  overflow: hidden;
   opacity: 1;
   transition: opacity 1.5s ease-in-out; /* Плавне зникнення */
 }
@@ -69,7 +69,10 @@ export default {
 .preloader-text {
   color: #fff;
   font-size: 2em;
-  font-family: 'Courier New', Courier, monospace; /* Стиль для анімації друкування */
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 90vw;
 }
 
 /* Коли прелоадер зникає, його opacity зменшується */
@@ -78,41 +81,36 @@ export default {
   visibility: hidden;
 }
 
-/* Фон */
-.animated-gradient {
-  margin: 0;
-  width: 100%;
+#app {
   height: 100vh;
-  background: linear-gradient(-66deg, #000000, #2d1075, #0f0b5f, #000000);
-  background-size: 250% 250%;
-  overflow: hidden;
-  animation: gradient-animation 16s ease infinite;
+  background-size: 300% 300%;
+  background-color: #4c028d;
+  background-image: radial-gradient(at 97% 97%, #2d0621 0, transparent 47%),
+    radial-gradient(at 1% 86%, #14091a 0, transparent 42%),
+    radial-gradient(at 63% 9%, #4e2876 0, transparent 50%),
+    radial-gradient(at 34% 44%, #112039 0, transparent 44%),
+    radial-gradient(at 92% 54%, rgb(54, 10, 77) 0, transparent 50%),
+    radial-gradient(at 89% 15%, #1f0a25 0, transparent 50%),
+    radial-gradient(at 1% 0%, #000000 0, transparent 50%),
+    radial-gradient(at 49% 78%, #080b3b 0, transparent 50%);
+  animation: gradient 30s linear infinite;
 }
 
-/* Анімація фону */
-@keyframes gradient-animation {
+@keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
 }
 
 body {
   padding: 0;
   margin: 0;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 nav {
