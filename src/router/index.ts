@@ -7,14 +7,14 @@ const routes: Array<RouteRecordRaw> = [
     component: MainLayout,
     children: [
       {
-        path: '/about',
-        name: 'about',
-        component: () => import('../views/AboutView.vue'),
+        path: '',
+        name: 'home', // Make this the default route for "/"
+        component: () => import('@/views/HomeView.vue'),
       },
       {
-        path: '/home',
-        name: 'HomeView',
-        component: () => import('@/views/HomeView.vue'),
+        path: 'about', // You don't need the leading "/"
+        name: 'about',
+        component: () => import('../views/AboutView.vue'),
       },
     ],
   },

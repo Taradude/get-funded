@@ -50,7 +50,15 @@ export default {
 </script>
 
 <style lang="scss">
-/* Прелоадер */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
 .preloader {
   top: 0;
   left: 0;
@@ -80,9 +88,11 @@ export default {
   opacity: 0;
   visibility: hidden;
 }
-
-#app {
+body {
   height: 100vh;
+}
+#app {
+  height: 100%;
   background-size: 300% 300%;
   background-color: #4c028d;
   background-image: radial-gradient(at 97% 97%, #2d0621 0, transparent 47%),
