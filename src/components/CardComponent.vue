@@ -23,7 +23,6 @@ export default {
 <style scoped lang="scss">
 .card {
   /* From https://css.glass */
-  padding: 8px;
   background: rgba(0, 0, 0, 0.258);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -36,7 +35,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 350px;
   width: 100%;
   max-width: 300px;
   margin: 10px;
@@ -48,6 +46,8 @@ export default {
   display: flex;
   justify-content: center;
   width: 100%;
+  align-items: flex-end;
+
   height: 10%;
 }
 .card-content {

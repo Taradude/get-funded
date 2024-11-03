@@ -88,12 +88,17 @@ nav {
   opacity: 0;
   visibility: hidden;
 }
+html,
 body {
-  height: 100vh;
-}
-#app {
   height: 100%;
-  background-size: 300% 300%;
+  margin: 0;
+}
+
+#app {
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #4c028d;
   background-image: radial-gradient(at 97% 97%, #2d0621 0, transparent 47%),
     radial-gradient(at 1% 86%, #14091a 0, transparent 42%),
