@@ -1,7 +1,9 @@
 <template>
   <div class="card">
     <div class="card-header">
-      <div class="card-title">{{ title }}</div>
+      <div class="card-title">
+        <h3>{{ title }}</h3>
+      </div>
     </div>
     <div class="card-content">
       <img :src="image" alt="Card image" class="card-image" />
@@ -30,7 +32,7 @@ export default {
   -webkit-backdrop-filter: blur(17.9px);
   border: 1px solid rgba(57, 56, 56, 0.31);
   text-align: center;
-  color: white;
+  color: #d6d6d6;
   display: flex;
   flex-direction: column;
   align-items: center;

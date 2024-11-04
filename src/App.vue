@@ -1,11 +1,9 @@
 <template>
-  <div id="app">
-    <!-- Прелоадер -->
+  <div id="appp" class="animeted">
     <div class="preloader" v-if="isLoading">
       <div class="preloader-text">{{ displayedText }}</div>
     </div>
 
-    <!-- Основний контент сайту -->
     <div v-else class="animated-gradient">
       <nav>
         <router-link to="/">Home</router-link> |
@@ -23,7 +21,7 @@ export default {
       isLoading: true, // Стан для прелоадера
       fullText: 'Best time to change your life - was yesterday', // Текст для анімації друкування
       displayedText: '', // Текст, який відображається
-      typingSpeed: 100, // Швидкість друкування
+      typingSpeed: 120, // Швидкість друкування
     }
   },
   mounted() {
@@ -33,7 +31,7 @@ export default {
     // Затримка перед зникненням прелоадера
     setTimeout(() => {
       this.isLoading = false
-    }, 7000) // Прелоадер триватиме 7 секунд
+    }, 6666) // Прелоадер триватиме 7 секунд
   },
   methods: {
     // Метод для поступового друкування тексту
@@ -89,16 +87,20 @@ nav {
   visibility: hidden;
 }
 html,
-body {
-  height: 100%;
+body,
+#appp {
   margin: 0;
+  padding: 0;
 }
 
-#app {
+#appp {
+  height: 100vh;
+}
+
+.animated-gradient {
   min-height: 100%;
-  min-width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 300% 300%;
   background-color: #4c028d;
   background-image: radial-gradient(at 97% 97%, #2d0621 0, transparent 47%),
     radial-gradient(at 1% 86%, #14091a 0, transparent 42%),

@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>Choose your LVL</h1>
     <CardComponent rating="0.1" title="Newbie" :image="require('@/assets/poor.jpg')" />
     <CardComponent rating="3.2" title="Amateur" :image="require('@/assets/amateur.jpg')" />
     <CardComponent rating="5.0" title="Profi" :image="require('@/assets/rich.jpg')" />
@@ -34,7 +35,16 @@ export default {
   gap: 1rem;
   justify-content: center;
 }
-
+h1 {
+  width: 100%;
+  font-size: calc(2rem + 4vw); // Динамічний розмір, що залежить від ширини екрана
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin: 20px 0;
+  word-break: break-word;
+  color: #d6d6d6;
+}
 .card {
   flex: 1 1 calc(33.333% - 1rem);
   max-width: calc(33.333% - 1rem);
@@ -42,7 +52,7 @@ export default {
   border-radius: 20px;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: #eeeeee;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
