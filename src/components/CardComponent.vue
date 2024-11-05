@@ -16,7 +16,7 @@
 export default {
   props: {
     image: String,
-    rating: Number,
+    rating: String,
     title: String,
   },
 }
@@ -78,7 +78,7 @@ export default {
   padding: 12px;
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: #d6d6d6;
   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
 
