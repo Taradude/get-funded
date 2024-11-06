@@ -5,10 +5,11 @@
     </div>
 
     <div class="content" ref="content" v-if="!isLoading">
-      <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-      </nav>
+      <div class="router-wrap">
+        <nav>
+          <router-link to="/">Home</router-link>
+        </nav>
+      </div>
       <router-view />
     </div>
   </div>
@@ -81,6 +82,15 @@ export default {
   color: #fff;
   font-size: 2em;
   text-align: center;
+}
+.router-wrap {
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 .animated-gradient {
   min-height: 100vh;

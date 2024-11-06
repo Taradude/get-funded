@@ -1,13 +1,10 @@
 <template>
   <div class="card">
-    <div class="card-header">
-      <div class="card-title">
-        <h3>{{ title }}</h3>
-      </div>
-    </div>
+    <img :src="image" alt="Card image" class="card-image" />
     <div class="card-content">
-      <img :src="image" alt="Card image" class="card-image" />
-      <div class="card-rating">{{ rating }}</div>
+      <h3 class="card-title">{{ title }}</h3>
+      <div class="card-rating">{{ rating }}⭐</div>
+      <p class="card-description">{{ description }}</p>
     </div>
   </div>
 </template>
@@ -18,81 +15,87 @@ export default {
     image: String,
     rating: String,
     title: String,
+    description: String,
   },
 }
 </script>
 
 <style scoped lang="scss">
+@property --rotate {
+  syntax: '<angle>';
+  initial-value: 132deg;
+  inherits: false;
+}
+
 .card {
-  /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.258);
+  background-color: #151924ea;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(17.9px);
-  -webkit-backdrop-filter: blur(17.9px);
-  border: 1px solid rgba(57, 56, 56, 0.31);
   text-align: center;
   color: #d6d6d6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   max-width: 300px;
-  margin: 10px;
+  margin: 20px;
   position: relative;
-  overflow: hidden;
 }
 
-.card-header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  align-items: flex-end;
-
-  height: 10%;
+.card::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 16px;
+  background-image: linear-gradient(var(--rotate), #5ddcff52, #3c66e353 43%, #4e00c244);
+  z-index: -1;
+  animation: spin 6s linear infinite;
+  opacity: 1;
 }
-.card-content {
-  height: 90%;
-  width: 95%;
+
+.card:hover::before {
+  opacity: 0.7;
 }
 
 .card-image {
-  width: 90%;
+  width: calc(100% + 110px);
   height: auto;
-  border-radius: 20px;
+  margin: -10px;
+  border-radius: 16px 16px 0 0;
   object-fit: cover;
 }
 
+.card-content {
+  // margin: 15px;
+}
+
 .card-title {
-  font-size: 20px;
+  font-size: 24px;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 .card-rating {
-  background-color: #4a037c;
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 12px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #d6d6d6;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  font-size: 18px;
+  margin: 10px 0;
+  color: #ffcc00;
 }
 
-@media (max-width: 768px) {
-  .card {
-    width: 100%;
-    max-width: 90%;
+.card-description {
+  font-size: 14px;
+  color: #bbb;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
   }
-}
-
-@media (max-width: 480px) {
-  .card {
-    width: 100%;
-    max-width: 100%;
+  100% {
+    --rotate: 366deg;
   }
 }
 </style>
