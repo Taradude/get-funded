@@ -32,12 +32,24 @@
     </div>
 
     <div class="cards">
-      <div class="card">
-        <img :src="carImage1" alt="Car 1" />
-      </div>
-      <div class="card">
-        <img :src="carImage2" alt="Car 2" />
-      </div>
+      <a href="https://e8x.e8markets.com/affiliate">
+        <div class="card">
+          <img :src="carImage1" alt="Car 1" />
+          <span
+            >5% sale code
+            <p class="code">STOPHUNT</p></span
+          >
+        </div>
+      </a>
+      <a href="https://cryptofundtrader.com/?_by=profit_taker">
+        <div class="card">
+          <img :src="carImage2" alt="Car 2" />
+          <span
+            >5% sale code
+            <p class="code">platinum5</p></span
+          >
+        </div>
+      </a>
     </div>
 
     <div class="marquee-container">
@@ -81,8 +93,8 @@ export default {
     }
   },
   mounted() {
-    this.startMarquee('marquee-text', 'text-path', -0.9)
-    this.startMarquee('marquee-text-2', 'text-path-2', 0.9)
+    this.startMarquee('marquee-text', 'text-path', -0.6)
+    this.startMarquee('marquee-text-2', 'text-path-2', 0.6)
   },
   methods: {
     startMarquee(id, pathId, speed) {
@@ -123,16 +135,47 @@ export default {
   justify-content: center;
   gap: 20px;
   padding: 12px;
+  a {
+    text-decoration: none; /* Прибирає підкреслення */
+    display: block; /* Робить посилання блоковим */
+    width: 100%; /* Робить посилання такої ж ширини, як і картка */
+    max-width: 500px;
+  }
 }
 
 .card {
-  width: 100%;
   max-width: 500px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
   align-items: center;
 }
-
+span {
+  font-size: 1.5em;
+  font-family: monospace;
+  animation: pulse 5s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  .code {
+    font-family: fantasy;
+    color: #ffcc00;
+    display: inline;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger */
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .card img {
   max-width: 100%;
   object-fit: cover;
@@ -146,6 +189,9 @@ export default {
 @media (max-width: 768px) {
   .uppercase-text {
     font-size: 1.5em;
+  }
+  .card {
+    height: 200px;
   }
 }
 

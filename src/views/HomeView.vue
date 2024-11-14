@@ -290,7 +290,9 @@ h1 {
     background-position: 0 0; /* Повернення в початкове положення */
   }
 }
-
+a {
+  text-decoration: none;
+}
 .card {
   flex: 1 1 calc(33.333% - 1rem);
   max-width: calc(33.333% - 1rem);
