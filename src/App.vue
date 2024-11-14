@@ -61,6 +61,12 @@ export default {
   padding: 0;
   font-family: monospace;
 }
+html {
+  overflow-x: hidden;
+}
+#appp {
+  overflow-x: hidden;
+}
 .preloader {
   position: fixed;
   top: 0;
@@ -83,7 +89,16 @@ export default {
   font-size: 2em;
   text-align: center;
 }
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .router-wrap {
+  position: relative;
+  top: 10px;
   padding: 32px;
   display: flex;
   flex-direction: row;
@@ -93,8 +108,10 @@ export default {
   align-items: center;
 }
 .animated-gradient {
+  position: relative; /* Додає розміщення для розтягування */
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden; /* Прибирає непотрібну прокрутку */
   background-size: 300% 300%;
   background-color: #4c028d;
   background-image: radial-gradient(at 97% 97%, #2d0621 0, transparent 47%),
@@ -106,7 +123,12 @@ export default {
     radial-gradient(at 1% 0%, #000000 0, transparent 50%),
     radial-gradient(at 49% 78%, #080b3b 0, transparent 50%);
   animation: gradient 30s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 0%;

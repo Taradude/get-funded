@@ -76,8 +76,8 @@
 export default {
   data() {
     return {
-      carImage1: require('@/assets/bmw.png'),
-      carImage2: require('@/assets/bmw.png'),
+      carImage1: require('@/assets/e8logo.png'),
+      carImage2: require('@/assets/cryptologo.png'),
     }
   },
   mounted() {
@@ -131,8 +131,7 @@ export default {
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 8px;
 }

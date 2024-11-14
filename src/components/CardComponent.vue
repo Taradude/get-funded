@@ -1,12 +1,14 @@
 <template>
-  <div class="card">
-    <img :src="image" alt="Card image" class="card-image" />
-    <div class="card-content">
-      <h3 class="card-title">{{ title }}</h3>
-      <div class="card-rating">{{ rating }}⭐</div>
-      <p class="card-description">{{ description }}</p>
+  <router-link :to="{ name: routeName }" class="clickable-component">
+    <div class="card">
+      <img :src="image" alt="Card image" class="card-image" />
+      <div class="card-content">
+        <h3 class="card-title">{{ title }}</h3>
+        <div class="card-rating">{{ rating }}⭐</div>
+        <p class="card-description">{{ description }}</p>
+      </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -16,6 +18,10 @@ export default {
     rating: String,
     title: String,
     description: String,
+    routeName: {
+      type: String,
+      required: true,
+    },
   },
 }
 </script>
@@ -39,7 +45,7 @@ export default {
   justify-content: flex-start;
   width: 100%;
   max-width: 300px;
-  margin: 20px;
+  margin: 16px;
   position: relative;
 }
 

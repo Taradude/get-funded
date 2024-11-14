@@ -7,10 +7,10 @@
       </h1>
       <p>
         Why <b>risk</b> your own cash💵 when you can trade with someone else's? 🤔<br /><b
-          >Getting funded means big capital</b
+          ><br />Getting funded means big capital</b
         >
         with little investment from your pocket. Plus, if things go south, it's their money on the line, not
-        yours. <br /><br /><b
+        yours.😏 <br /><br /><b
           >This is an opportunity to grow faster with less<span class="red"> risk</span>.</b
         >
       </p>
@@ -19,9 +19,9 @@
     <div class="middle">
       <h1>Choose your <span class="bg-text2">LVL</span></h1>
       <p>
-        Think you're a trading guru? 🧠 <br />
-        Even the best can stumble. Take a quick run through levels and <b>challenge yourself</b>. You might
-        discover gaps you didn't know you had. <br /><br /><b>No one’s perfect,</b>
+        <b>Think you're a trading guru? </b>🧠 <br />
+        <br />Even the best can stumble. Take a quick run through levels and <b>challenge yourself</b>. You
+        might discover gaps you didn't know you had. <br /><br /><b>No one’s perfect,</b>
         but being aware is the first step to mastery.
       </p>
       <div class="card-wrap">
@@ -30,18 +30,21 @@
           title="Newbie"
           :image="require('@/assets/poor.png')"
           description="buy high - sell low"
+          routeName="newbie"
         />
         <CardComponent
           rating="2.7"
           title="Amateur"
           :image="require('@/assets/amateur.png')"
           description="pattern trader"
+          routeName="amateur"
         />
         <CardComponent
           rating="4.4"
           title="Profi"
           :image="require('@/assets/rich.png')"
           description="trap trader"
+          routeName="profi"
         />
       </div>
     </div>
@@ -53,10 +56,13 @@
         ><br /><br />
         Click the link, become a <span class="fantasy">FUNDED TRADER</span>, and prove you're the real deal.
       </p>
+      <div class="img">
+        <img src="@/assets/e8.png" alt="" />
+        <img src="@/assets/crypto.png" alt="" />
+      </div>
       <MarqueeComponent
-        :leftImage="require('@/assets/bmw.png')"
-        :rightImage="require('@/assets/bmw.png')"
-        text="Your dream car is waiting for you!"
+        :leftImage="require('@/assets/e8logo.png')"
+        :rightImage="require('@/assets/cryptologo.png')"
       />
     </div>
   </div>
@@ -118,6 +124,7 @@ export default {
 
 <style lang="scss">
 .home {
+  padding: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +145,6 @@ export default {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 85%;
     align-items: center;
     .card-wrap {
       display: flex;
@@ -153,6 +159,7 @@ p {
   max-width: 1000px;
   color: #d6d6d6;
   font-size: 2rem;
+  max-width: 85%;
 }
 h1 {
   width: 100%;
@@ -171,7 +178,6 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  display: inline-block;
   font-weight: bold;
   animation: marketMovement 5s infinite ease-in-out;
   font-size: 1.2em;
@@ -202,7 +208,37 @@ h1 {
   .fantasy {
     font-family: fantasy;
   }
+  .img {
+    display: flex;
+    gap: 20px; /* Простір між зображеннями */
+    justify-content: center; /* Вирівнювання зображень по центру */
+    flex-wrap: wrap; /* Дозволяє переносити зображення на новий рядок на менших екранах */
+    padding: 20px 0;
+
+    img {
+      max-width: 100%; /* Зображення не перевищують ширину контейнера */
+      height: auto; /* Зберігає пропорції зображення */
+      width: 300px; /* Базовий розмір зображення */
+      border-radius: 10px; /* Округлі краї (за потреби) */
+      object-fit: cover; /* Підтримка кращого відображення для різних пропорцій */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легка тінь */
+    }
+  }
+
+  /* Адаптивний стиль для менших екранів */
+  @media (max-width: 768px) {
+    .img img {
+      width: 200px; /* Зменшує розмір зображення на середніх екранах */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .img img {
+      width: 150px; /* Зменшує розмір зображення на маленьких екранах */
+    }
+  }
 }
+
 .timer {
   position: relative;
   top: 5px;
@@ -224,6 +260,30 @@ h1 {
   }
 }
 
+@keyframes marketMovement {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 0 100%; /* Рух вниз */
+  }
+  100% {
+    background-position: 0 0; /* Повернення в початкове положення */
+  }
+}
+
+@keyframes marketMovement2 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0; /* Рух праворуч */
+  }
+  100% {
+    background-position: 0 0; /* Повернення в початкове положення */
+  }
+}
+
 .card {
   flex: 1 1 calc(33.333% - 1rem);
   max-width: calc(33.333% - 1rem);
@@ -237,6 +297,9 @@ h1 {
   @media (max-width: 768px) {
     flex: 1 1 calc(50% - 1rem);
     max-width: calc(50% - 1rem);
+    .middle {
+      max-width: 85%;
+    }
   }
 
   @media (max-width: 480px) {
