@@ -76,7 +76,10 @@ export default {
 }
 
 .card-content {
-  // margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title {
@@ -92,7 +95,7 @@ export default {
 }
 
 .card-description {
-  font-size: 14px;
+  font-size: 18px;
   color: #bbb;
 }
 

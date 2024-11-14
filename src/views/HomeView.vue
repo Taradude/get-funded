@@ -54,7 +54,11 @@
         <span class="center"
           >Don't waste your time! <br />Because time - is money <span class="timer"></span></span
         ><br /><br />
-        Click the link, become a <span class="fantasy">FUNDED TRADER</span>, and prove you're the real deal.
+        Click the link, become a <span class="fantasy">FUNDED TRADER</span>. <br />
+
+        <br />
+        I lost <span class="fantasy">8</span> accounts before getting a funded one – it’s worth it after the
+        first payout.
       </p>
       <div class="img">
         <img src="@/assets/e8.png" alt="" />
@@ -137,6 +141,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 48px;
     .red {
       color: rgba(255, 0, 0, 0.66);
     }
@@ -146,6 +151,7 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    gap: 48px;
     .card-wrap {
       display: flex;
       flex-wrap: wrap;
@@ -162,7 +168,7 @@ p {
   max-width: 85%;
 }
 h1 {
-  width: 100%;
+  max-width: 80%;
   font-size: calc(2rem + 3.5vw);
   font-weight: bold;
   line-height: 1.2;
@@ -207,6 +213,7 @@ h1 {
   }
   .fantasy {
     font-family: fantasy;
+    color: #ffcc00;
   }
   .img {
     display: flex;

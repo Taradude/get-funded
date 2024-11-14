@@ -128,6 +128,9 @@ export default {
 .card {
   width: 100%;
   max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card img {

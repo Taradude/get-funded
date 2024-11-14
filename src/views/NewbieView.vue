@@ -1,95 +1,187 @@
 <template>
   <div class="newbie">
-    <h2>1. Get Started with Binance - Save on Fees Right Away!</h2>
+    <h2>1. Get Started with Binance - Save on Fees with my LINK!</h2>
     <p>
-      When I first started trading, I didn’t realize how much those tiny fees would add up over time! Every
-      trade takes a little bite out of your profits, and they add up faster than you’d think. That’s why I
-      recommend <b>registering on Binance using my exclusive link</b> to get a
-      <b>discount on trading fees</b>. Think of it as saving for the future – every dollar saved is a dollar
-      you can reinvest. So set yourself up for efficiency right from the start. Trading is challenging enough
-      without added costs – get your edge early!
+      When I first started trading, I didn’t realize how much those small fees would chip away at my profits
+      🪙. Every trade takes a bit, and they add up fast. That’s why I suggest
+      <b>registering on Binance using my exclusive link</b> to take advantage of a
+      <b>discount on trading fees</b>. Think of it as setting yourself up for the long haul – every dollar
+      saved is a dollar you can reinvest. Trading is challenging enough without extra costs, so get that edge
+      early! <br /><br />Even if you're already registered but don’t have any discounts, it’s worth creating a
+      <b>new account</b>
+      if you’re planning to make real profits in crypto. Imagine this: with the average trading fee on Binance
+      at 0.1% per trade, my link gives you a discount that can <b>SAVE YOU $200-$500 A YEAR</b> if you are a
+      small trader.
     </p>
+    <a href="https://accounts.binance.com/register?ref=18019829">Money Saved = Money Earned</a>
+
     <h2>2. The Power of Risk Management: Use the 1-2% Rule</h2>
     <p>
-      Here’s the truth: one of the hardest lessons I learned was controlling my risk. When I started out, I’d
-      risk way too much on a single trade, thinking “this one’s a sure thing” – and then, *bam*, big loss. Now
-      I use the <b>1-2% rule</b>, which means I never risk more than 1-2% of my total trading capital on any
-      one trade. So, if I’ve got $1,000, I’ll risk only $10-$20 per trade.
-      <b>This isn’t just a guideline; it’s a survival tool</b>. Keeping each potential loss small means that
-      even after a string of bad trades, you’re still in the game with capital to make a comeback. Trust me,
-      it’s a game-changer.
+      Here’s the truth: one of the hardest lessons I learned was controlling my risk. Early on, I’d risk way
+      too much on a single trade, thinking, “this one’s a sure thing” – but, *bam*, big loss. Now I follow the
+      <b>1-2% rule</b>: I never risk more than 1-2% of my total trading capital on a single trade.
     </p>
+    <p>
+      For example, with $1,000, I’ll risk only $10-$20 per trade.
+      <b>This isn’t just a guideline; it’s a survival tool</b>. By keeping each potential loss small, even if
+      I hit a streak of bad trades, I’ve got enough capital left to make a comeback. Trust me, it’s a
+      game-changer.
+    </p>
+    <img src="@/assets/risk .png" alt="" />
+
     <h2>3. Setting a Stop-Loss: Your Safety Net</h2>
     <p>
-      If you’re not using stop-losses, you’re pretty much gambling. Early on, I’d hold onto a trade, thinking
-      the price would “bounce back” – but then it would just keep dropping. Now, I always set a
-      <b>stop-loss</b> to limit my losses. Let’s say I buy a coin at $100 and set a stop-loss at $95. If it
-      hits $95, the trade closes automatically, capping my loss.
-      <b>The goal here isn’t to avoid all losses but to control and minimize them</b> so you stay in the game.
-      Think of it as a seatbelt – you hope you don’t need it, but when you do, it’s there to keep you safe.
+      If you’re not using stop-losses, you’re basically gambling. Early on, I’d hold onto a trade, hoping the
+      price would “bounce back” – but it would just keep dropping 📉. Now, I always set a
+      <b>stop-loss</b> to limit losses.
     </p>
+    <p>
+      Let’s say I buy a coin at $100 and set a stop-loss at $95. If it hits $95, the trade closes
+      automatically, capping my loss.
+      <b>The goal here isn’t to avoid all losses but to control and minimize them</b>. Think of it as a
+      seatbelt – you hope you don’t need it, but when you do, it’s there to keep you safe.
+    </p>
+    <img src="@/assets/stop.png" alt="" />
     <h2>4. Calculating Position Size: Trade Smart, Not Big</h2>
     <p>
-      Position size is everything. I used to go big on trades, thinking I’d score faster profits, but all it
-      did was put me at more risk. Here’s a simple formula that changed my approach:
-      <b>Position Size = Risk per trade / Stop-loss distance</b>. If I’m risking $10 and my stop-loss is $2
-      below the entry price, I’d buy 5 units (10/2 = 5). This keeps the size manageable so that if the market
-      moves against me, I’m not losing a huge chunk of my account. Smart sizing is about being *in control*,
-      even when the market isn’t.
+      Position size is huge. I used to go big on trades, hoping for faster profits, but that just increased my
+      risk. Here’s the formula that changed my approach:
+      <b>Position Size = Risk per trade / Stop-loss distance</b>. So, if I’m risking $10 and my stop-loss is
+      $2 below my entry price, I’d buy 5 units (10/2 = 5).
     </p>
-    <h2>5. Intraday Trading: Mastering the Day ⏰</h2>
     <p>
-      If you like quick, fast-paced trades, <b>intraday trading</b> might be your thing. I tried it and
-      learned a lot – it’s all about focus and quick decisions, because you’re opening and closing trades
-      within the same day. For example, if I buy a coin at $50, I might aim to sell it at $53 in a few hours.
-      These short trades usually target gains of 1-2%. Intraday taught me a ton about
-      <b>discipline and emotional control</b>, because one impulsive move can ruin a whole day’s gains. If
-      you’re down for it, this is a serious skill-builder.
+      This keeps the trade size manageable so that if the market moves against me, I’m not losing a massive
+      chunk of my account. <b>Smart sizing keeps you in control</b>, even when the market isn’t.
     </p>
-    <h2>6. Swing Trading: Patience Pays Off 🕰️</h2>
+    <div class="position-size-calculator">
+      <h2>Position Size Calculator</h2>
+
+      <div class="input-group">
+        <label for="balance">Account Balance ($):</label>
+        <input id="balance" type="number" v-model.number="balance" placeholder="Enter your account balance" />
+      </div>
+
+      <div class="input-group">
+        <label for="risk">Risk per Trade (%):</label>
+        <input id="risk" type="number" v-model.number="risk" placeholder="Enter risk percentage" />
+      </div>
+
+      <div class="input-group">
+        <label for="stopLoss">Stop-Loss Distance ($):</label>
+        <input id="stopLoss" type="number" v-model.number="stopLoss" placeholder="Enter stop-loss distance" />
+      </div>
+
+      <div class="input-group">
+        <label for="assetPrice">Asset Price ($):</label>
+        <input id="assetPrice" type="number" v-model.number="assetPrice" placeholder="Enter asset price" />
+      </div>
+
+      <button @click="calculatePositionSize">Calculate Size</button>
+
+      <div v-if="positionSize !== null" class="result">
+        <p>
+          Your Position Size: <b>{{ positionSize.toFixed(2) }} units</b>
+        </p>
+      </div>
+    </div>
+
+    <h2>5. Risk-Reward Ratio: Aim for 1:2 or Higher 🎯</h2>
     <p>
-      So, swing trading is the opposite of intraday. Instead of fast in-and-out moves, <b>swing trading</b> is
-      about holding trades for days or even weeks. I like this approach for bigger price movements and less
-      screen time. For instance, I might buy a coin at $50 expecting it to reach $60 over a week. I use a
-      wider stop-loss here to account for fluctuations, but the reward is usually higher – I aim for gains
-      around 5-10%. Swing trading requires patience, but it’s a great strategy for those who want to balance
-      trading with other things in life.
+      Now that you have a clear risk per trade, here’s a rule to help keep profits steady: always go for a
+      <b>1:2 risk-reward ratio</b>. For every dollar I risk, I aim to make at least two.
     </p>
-    <h2>7. Risk-Reward Ratio: Aim for 1:2 or Higher 🎯</h2>
     <p>
-      This rule is non-negotiable for me. I stick to a <b>1:2 risk-reward ratio</b>, meaning for every dollar
-      I risk, I aim to make at least two. If I risk $10, my target profit is $20. This is a powerful way to
-      stay profitable, even if only half your trades win. By aiming for a realistic reward, you make sure that
-      each win has the potential to cover a couple of losses. It’s one of the simplest ways to
-      <b>keep your strategy profitable in the long run</b>.
+      If I risk $10, I target $20 in profit. This is powerful – even if I only win half of my trades, I’m
+      still profitable overall. Aiming for a realistic reward ensures that each win has the potential to cover
+      a few losses. <b>Keeping your strategy profitable in the long run is key</b>. <br />Look closely how it
+      works.
     </p>
-    <h2>8. Using Notion for Your Trading Journal 📓</h2>
+    <img src="@/assets/tableRR.png" alt="" />
+
+    <h2>6. Choosing the Right Timeframe</h2>
     <p>
-      Not keeping a trading journal is like throwing away your best lessons. Early on, I didn’t track my
-      trades, and I ended up repeating the same mistakes. Now, I use <b>Notion</b> to record every trade:
-      entry, exit, strategy, result, and my emotions during the trade. Reviewing this later shows me what’s
-      working and what needs to change. Your journal isn’t just a record; it’s a
-      <b>blueprint for improving</b>. Plus, there’s something motivating about looking back and seeing how far
-      you’ve come.
+      When it comes to timeframes, here’s the golden rule:
+      <b>the higher the timeframe, the clearer the trend</b>. Higher timeframes show the big picture, while
+      lower timeframes add noise and uncertainty.
     </p>
-    <h2>9. Avoid Over-Trading: Quality Over Quantity</h2>
     <p>
-      I used to think being constantly in the market was the way to go. I’d jump on every signal, but that
-      just led to exhaustion and losses. Now, I focus on 2-3 high-quality setups and ignore the rest. It’s not
-      about making a ton of trades; it’s about making the <b>right trades</b>. Over-trading can drain your
-      energy and account balance. By being patient and waiting for the best setups, I stay consistent and
-      stress-free.
+      Always do a <b>top-down analysis</b>, starting from the weekly chart to understand the main trend, then
+      narrowing down to the daily or 4-hour chart. This approach keeps you aligned with the bigger picture and
+      reduces your chances of being thrown off by short-term fluctuations. Finding the right timeframe is
+      about being in sync with your strategy, not just chasing trends.
     </p>
-    <h2>10. Choosing the Right Timeframe</h2>
+    <h2>From 1d to 1h analysis 👇</h2>
+    <a href="https://ru.tradingview.com/?aff_id=144738">Get $15 sale on TradigView</a>
+    <img src="@/assets/1d.png" alt="" />
+    <img src="@/assets/4h.png" alt="" />
+    <img src="@/assets/1h.png" alt="" />
+
+    <h1>Choose the Right Trading Approach for Your Personality</h1>
+    <p>Your trading approach should fit your mindset. Here are three types to consider:</p>
+
+    <h2>7. Intraday Trading: Mastering the Day ⏰</h2>
     <p>
-      Choosing the right <b>timeframe</b> is crucial for your trading style. Intraday traders tend to use
-      shorter charts (5-15 minutes), while swing traders often go for daily or 4-hour charts. When I was a
-      beginner, I started with longer timeframes to get comfortable without feeling rushed. As I grew more
-      confident, I tried shorter frames. The key here is to find what aligns with your lifestyle and goals, so
-      you’re trading in sync with the market.
+      If you like quick, fast-paced trades, <b>intraday trading</b> might be your style. I tried it and
+      learned it’s all about focus and quick decisions. For example, if I buy a coin at $50, I might aim to
+      sell it at $53 within a few hours. These short trades usually target 1-2% gains and taught me about
+      discipline and controlling my emotions. It’s intense, but a great way to build your trading skills.
+    </p>
+
+    <h2>8. Swing Trading: Patience Pays Off 🕰️</h2>
+    <p>
+      For a more relaxed approach, <b>swing trading</b> lets you hold trades for days or weeks, focusing on
+      larger trends with less screen time. For instance, I might buy a coin at $50 expecting it to reach $60
+      over a week. I use a wider stop-loss to account for fluctuations, aiming for 5-10% gains. Swing trading
+      is great if you want to trade alongside other responsibilities.
+    </p>
+
+    <h2>9. Trend Following: Trend is your friend 📈</h2>
+    <p>
+      Some traders focus only on following long-term trends and avoid the short-term noise altogether. With
+      <b>trend following</b>, you wait for a clear, established trend on higher timeframes (like the weekly),
+      and simply follow it. This approach requires patience but can yield significant results without needing
+      constant screen time.
+    </p>
+
+    <h2>10. Keep Emotions in Check - This Isn’t Gambling 🎲</h2>
+    <p>
+      The biggest lesson? <b>Trading isn’t gambling</b>. Losses are part of the game, but how you react makes
+      all the difference. Letting emotions take over leads to revenge trading, chasing losses, and ultimately
+      blowing up your account.
+    </p>
+    <p>
+      Losses will happen – the goal is to learn from them and adjust. Emotionally reacting to losses and
+      taking random risks is what separates gambling from disciplined trading. It’s all about managing your
+      mindset and keeping things calculated and strategic.
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'PositionSizeCalculator',
+  data() {
+    return {
+      balance: 0,
+      risk: 0,
+      stopLoss: 0,
+      assetPrice: 0,
+      positionSize: null,
+    }
+  },
+  methods: {
+    calculatePositionSize() {
+      if (this.balance > 0 && this.risk > 0 && this.stopLoss > 0 && this.assetPrice > 0) {
+        const riskAmount = (this.balance * this.risk) / 100
+        this.positionSize = riskAmount / (this.stopLoss * this.assetPrice)
+      } else {
+        this.positionSize = null
+        alert('Please enter valid values for all fields.')
+      }
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .newbie {
@@ -97,17 +189,79 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 36px;
   padding: 12px;
+  max-width: 85%;
+}
+.position-size-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1.3em;
+  max-width: 400px;
+  margin: auto;
+  padding: 32px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #d6d6d6;
+  text-align: center;
+  button {
+    width: 40%;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+img {
   max-width: 80%;
+  max-height: 70%;
+  border-radius: 10px;
+}
+a {
+  text-align: center;
+  color: #ffcc00;
+  font-size: 1.7em;
+  font-family: fantasy;
+  animation: pulse 5s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger */
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+h1 {
+  color: #ffcc00;
+  font-size: 2.5em;
+  margin-top: 20px;
 }
 h2 {
-  text-align: center;
   color: #adffe4;
-  font-size: 3em;
+  font-size: 2em;
+  margin-top: 10px;
 }
 p {
   color: #d6d6d6;
-  font-size: 2rem;
+  font-size: 1.6em;
+  line-height: 1.6;
+  margin-top: 5px;
 }
 </style>

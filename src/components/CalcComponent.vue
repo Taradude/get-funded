@@ -59,6 +59,7 @@ h2 {
   text-align: center;
 }
 .glass-container {
+  font-size: 1.3em;
   margin: 35px;
   display: flex;
   justify-content: center;
@@ -68,12 +69,12 @@ h2 {
 }
 
 .glass {
-  max-width: 500px;
+  max-width: 600px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.068);
   backdrop-filter: blur(40px);
   border-radius: 16px;
-  padding: 16px;
+  padding-top: 16px;
 }
 
 .drop-shadow {
