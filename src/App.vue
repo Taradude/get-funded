@@ -7,7 +7,14 @@
     <div class="content" ref="content" v-if="!isLoading">
       <div class="router-wrap">
         <nav>
-          <router-link to="/">Home</router-link>
+          <router-link to="/"><span>Home</span></router-link>
+          <a href="https://www.youtube.com/@GetFundedOrDieTryin"><img src="@/assets/youtube.png" alt="" /></a>
+          <a href="https://www.instagram.com/getfundedordietryin_/profilecard/?igsh=cXNmM2tmMGoxdzVk"
+            ><img src="@/assets/instagram.png" alt=""
+          /></a>
+          <a href="https://www.tiktok.com/@getfundedordietryin?_t=8rQXpre93ou&_r=1"
+            ><img src="@/assets/tiktok.png" alt=""
+          /></a>
         </nav>
       </div>
       <router-view />
@@ -73,6 +80,7 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding: 6px;
   background-color: #000;
   display: flex;
   align-items: center;
@@ -96,7 +104,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-.router-wrap {
+nav {
   position: relative;
   top: 10px;
   padding: 32px;
@@ -106,6 +114,14 @@ html {
   align-content: space-between;
   justify-content: flex-end;
   align-items: center;
+  gap: 36px;
+  span {
+    font-size: 1.5em;
+    color: azure;
+  }
+  img {
+    width: 40px;
+  }
 }
 .animated-gradient {
   position: relative; /* Додає розміщення для розтягування */

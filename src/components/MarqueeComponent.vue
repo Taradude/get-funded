@@ -119,7 +119,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   text-align: center;
   overflow: hidden;
@@ -148,7 +148,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 span {
