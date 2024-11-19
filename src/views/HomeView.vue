@@ -115,7 +115,7 @@ export default {
         duration: 0.5,
         delay: 2.5, // Затримка 0.5 секунди після карток
         ease: 'power2.out',
-        stagger: 0.6,
+        stagger: 0.3,
         scrollTrigger: {
           trigger: '.middle',
           start: 'top 80%',
