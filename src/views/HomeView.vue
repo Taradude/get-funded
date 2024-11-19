@@ -49,7 +49,7 @@
       </div>
     </div>
     <div class="bottom">
-      <h1>Think you're ready?</h1>
+      <h1>Think you're <span class="dollar">ready</span>?</h1>
       <p>
         <span class="center"
           >Don't waste your time! <br />Because time - is money <span class="timer"></span></span
@@ -190,7 +190,7 @@ h1 {
 }
 .bg-text2 {
   background-image: url('@/assets/lvl.png');
-  background-size: cover;
+  background-size: contain;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -273,6 +273,17 @@ h1 {
   }
   50% {
     background-position: 0 100%; /* Рух вниз */
+  }
+  100% {
+    background-position: 0 0; /* Повернення в початкове положення */
+  }
+}
+@keyframes moneyMovement {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 0 190%; /* Рух вниз */
   }
   100% {
     background-position: 0 0; /* Повернення в початкове положення */
