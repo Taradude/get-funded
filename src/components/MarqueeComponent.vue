@@ -152,6 +152,7 @@ export default {
   align-items: center;
 }
 span {
+  color: aliceblue;
   font-size: 1.5em;
   font-family: monospace;
   animation: pulse 5s ease-in-out infinite;
