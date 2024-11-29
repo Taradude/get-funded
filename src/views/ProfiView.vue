@@ -3,7 +3,7 @@
     <h2>So, You're a Pro, Huh? 🧐</h2>
     <p>
       If you're really a pro, you've got a solid strategy, killer stats, and the scars to prove it. No
-      excuses, no whining—just results.
+      excuses, no whining — just results.
 
       <br /><br />
     </p>

@@ -158,16 +158,16 @@
 
     <h2>10. The Power of a Trading Journal: Your Guide to Growth 📝</h2>
     <p>
-      In trading, success often comes down to one word: **consistency**. And the best way to achieve
-      consistency is through a well-maintained trading journal. Why? Because without tracking your trades,
-      you’re flying blind, unable to identify what’s working and what’s holding you back.
+      In trading, success often comes down to one word: consistency. And the best way to achieve consistency
+      is through a well-maintained trading journal. Why? Because without tracking your trades, you’re flying
+      blind, unable to identify what’s working and what’s holding you back.
 
       <br /><br />A trading journal helps you analyze your results, spot recurring mistakes, and, most
-      importantly, find patterns that lead to **regular profits**. Imagine discovering that every time you
-      trade against a clear trend, you lose, or that certain setups consistently bring you gains. This isn’t
+      importantly, find patterns that lead to regular profits. Imagine discovering that every time you trade
+      against a clear trend, you lose, or that certain setups consistently bring you gains. This isn’t
       guesswork—it’s actionable data you’ve gathered from your own experience.
 
-      <br /><br />Here’s the key: always document **why** you entered a trade. Take a screenshot of the chart
+      <br /><br />Here’s the key: always document why you entered a trade. Take a screenshot of the chart
       before entering the position, and write a brief explanation of your reasoning. What indicators or trends
       caught your eye? What was your target and stop-loss plan? This small habit can save you from repeating
       errors and help you refine your strategy over time.
@@ -190,14 +190,16 @@
       Losses will happen – the goal is to learn from them and adjust. Emotionally reacting to losses and
       taking random risks is what separates gambling from disciplined trading. It’s all about managing your
       mindset and keeping things calculated and strategic. <br /><br /><b>Tips from my experience:</b>
-      <br /><br />1. Don't trade in a bad mood, if you have a fight or just a bad day - don't trade. <br />2.
-      Always keep a trading journal, this will allow you to see what mistakes you repeat and avoid them in the
-      future, you will also be able to track the time and types of trades that bring the most profit. <br />3.
-      Allocate specific time for trading - for example, only the NY session, this will allow you to treat
-      trading as a job. <br />4. In the beginning, avoid trading during the news, ideally close all positions
-      before the news is released. <br />5. Risk management is everything. It is enough to forget to set a
-      stop loss once and you will lose everything. Take trading seriously. <br />Good luck and stay
-      coldminded.
+      <br /><br /><br />
+      1. Don't trade in a bad mood, if you have a fight or just a bad day - don't trade. <br />
+      <br />2. Always keep a trading journal, this will allow you to see what mistakes you repeat and avoid
+      them in the future, you will also be able to track the time and types of trades that bring the most
+      profit. <br />
+      <br />3. Allocate specific time for trading - for example, only the NY session, this will allow you to
+      treat trading as a job. <br /><br />4. In the beginning, avoid trading during the news, ideally close
+      all positions before the news is released. <br /><br />5. Risk management is everything. It is enough to
+      forget to set a stop loss once and you will lose everything. Take trading seriously. <br />Good luck and
+      stay coldminded.
     </p>
 
     <p>

@@ -48,6 +48,27 @@
         />
       </div>
     </div>
+    <div class="roadmap">
+      <h1>Roadmap to $10K/Month from $250 🚀</h1>
+      <div class="steps">
+        <div class="step" v-for="(step, index) in steps" :key="index">
+          <div class="step-number">{{ index + 1 }}</div>
+          <div class="step-content">
+            <!-- <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="#FFC107" stroke-width="2" />
+              <path
+                d="M12 7v5l3 3"
+                stroke="#FFC107"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg> -->
+            <p>{{ step }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="bottom">
       <h1>Think you're <span class="dollar">ready</span>?</h1>
       <p>
@@ -82,6 +103,19 @@ import MarqueeComponent from '@/components/MarqueeComponent.vue'
 gsap.registerPlugin(ScrollTrigger)
 
 export default {
+  name: 'Road-map',
+  data() {
+    return {
+      steps: [
+        'Buy a $25K prop firm account for $250. Start small but smart. USE MY SPECIAL DISCOUNT CODE BELOW ',
+        'Reach 3% profit and earn $750. This proves your consistency.',
+        'Use $750 to upgrade to a $100K prop account. Now 3% equals $3,000.',
+        'With $3,000 profits, scale to a $200K prop account while keeping your $100K account active.',
+        'Copy trades between the $100K and $200K accounts, targeting ONLY 3% per month!',
+        'This is it. The turning point you’ve worked so hard for! 10k is just the beginning',
+      ],
+    }
+  },
   components: { CardComponent, CalcComponent, MarqueeComponent },
   mounted() {
     this.$nextTick(() => {
@@ -325,6 +359,96 @@ a {
   @media (max-width: 480px) {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+}
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #1e1e1e4c;
+  color: #d6d6d6;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  p {
+    font-size: 1.6em;
+  }
+}
+
+.roadmap h1 {
+  font-size: 2.5em;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 10px 15px;
+  background-color: #292929;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcc00;
+  color: #1e1e1e;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 50%; /* Ensures a circular shape */
+  margin-right: 15px;
+
+  /* Add this to ensure the width and height stay proportional */
+  aspect-ratio: 1 / 1;
+
+  /* Optional: Prevent any distortion caused by parent containers */
+  flex-shrink: 0;
+}
+
+.step-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.step svg {
+  flex-shrink: 0;
+}
+
+.step p {
+  font-size: 1.3em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .step {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+  }
+
+  .step p {
+    font-size: 1.2em;
   }
 }
 </style>

@@ -207,10 +207,10 @@
 </p>
 <h2>12. If You Think You’re Ready, Why Aren’t You Funded Yet?</h2>
 <p>
-  Let’s get real for a moment. If you’ve been nodding your head, thinking you already know all this, but you’re still trading with your own limited capital—what are you waiting for? **Getting funded is the next step to leveling up your trading game**. Imagine having access to $50,000, $100,000, or more, without risking your own hard-earned money. 
+  Let’s get real for a moment. If you’ve been nodding your head, thinking you already know all this, but you’re still trading with your own limited capital—what are you waiting for? Getting funded is the next step to leveling up your trading game. Imagine having access to $50,000, $100,000, or more, without risking your own hard-earned money. 
 </p>
 <p>
-  Here’s the deal: funded accounts allow you to scale your trading without needing years of savings or a massive bank account. All you need is **discipline, strategy, and consistency**—the exact traits you’ve been working on. Stop limiting your growth by sticking to small accounts. **Use their money, trade smart, and keep the profits**. The only thing standing between you and a funded account is action. So, why not take it right now?
+  Here’s the deal: funded accounts allow you to scale your trading without needing years of savings or a massive bank account. All you need is discipline, strategy, and consistency—the exact traits you’ve been working on. Stop limiting your growth by sticking to small accounts. Use their money, trade smart, and keep the profits. The only thing standing between you and a funded account is action. So, why not take it right now?
 </p>
 <div class="cards"> 
  <div>
