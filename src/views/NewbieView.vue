@@ -84,6 +84,51 @@
         </p>
       </div>
     </div>
+    <div class="video-container">
+      <h2>Top Videos for Beginner Traders</h2>
+
+      <!-- Video 1: Trading Psychology -->
+      <div class="video">
+        <h3>1. How to Master Trading Psychology | Brett Steenbarger</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/rD5nQzbm0iI"
+          title="How to Master Trading Psychology | Brett Steenbarger"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- Video 2: Risk Management 101 -->
+      <div class="video">
+        <h3>2. Risk Management 101 – For Day Trading Beginners</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ovf_CJhjey4"
+          title="Risk Management 101 – For Day Trading Beginners"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- Video 3: Smart Money Concepts -->
+      <div class="video">
+        <h3>Smart Money Concepts For Beginners: The Blueprint To Trade Like Banks</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7NZXUvNduc0"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
 
     <h2>5. Risk-Reward Ratio: Aim for 1:2 or Higher 🎯</h2>
     <p>
@@ -316,5 +361,30 @@ p {
   font-size: 1.6em;
   line-height: 1.6;
   margin-top: 5px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #d6d6d6;
+  border-radius: 10px;
+}
+
+.video h3 {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  height: auto;
 }
 </style>

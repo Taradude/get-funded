@@ -111,7 +111,7 @@ export default {
         'Reach 3% profit and earn $750. This proves your consistency.',
         'Use $750 to upgrade to a $100K prop account. Now 3% equals $3,000.',
         'With $3,000 profits, scale to a $200K prop account while keeping your $100K account active.',
-        'Copy trades between the $100K and $200K accounts, targeting ONLY 3% per month!',
+        'Copy trades between the $100K and $200K accounts, targeting ONLY 3-4% per month!',
         'This is it. The turning point you’ve worked so hard for! 10k is just the beginning',
       ],
     }

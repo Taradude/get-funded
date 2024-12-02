@@ -8,8 +8,8 @@
       <br /><br />
     </p>
     <h3>
-      So why not scale up your game? Boost your capital with <b>my exclusive <i>DISCOUNTS</i></b> on prop
-      firms.
+      So why not scale up your game? Boost your capital with
+      <b>my exclusive <i style="color: #ffcc00">DISCOUNTS</i></b> on prop firms.
     </h3>
 
     <p>Let’s see if you’re ready to handle real money.</p>

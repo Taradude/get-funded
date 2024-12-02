@@ -63,7 +63,7 @@
       <li>If you’re already in the move from accumulation, take partial profits when you see the price forming a new range at key resistance levels.</li>
     </ul>
     <img src="@/assets/amd.png" alt="">
-  <h2>The Dragon Pattern: A Liquidity Sweep Setup</h2>
+  <h2>The Dragon🐲 Pattern: A Liquidity Sweep Setup</h2>
     <h3>Structure</h3>
     <ul>
       <li>A downtrend followed by a first bottom.</li>
@@ -78,6 +78,7 @@
       <li>When the price forms the second bottom and breaks above the trendline, enter long.</li>
       <li>Place your stop-loss just below the second bottom and target the next key resistance level.</li>
     </ul>
+    <img src="@/assets/maxresdefault.jpg" alt="">
     <img src="@/assets/dragon.png" alt="">
 
 
@@ -209,9 +210,13 @@
 <p>
   Let’s get real for a moment. If you’ve been nodding your head, thinking you already know all this, but you’re still trading with your own limited capital—what are you waiting for? Getting funded is the next step to leveling up your trading game. Imagine having access to $50,000, $100,000, or more, without risking your own hard-earned money. 
 </p>
+<h1>👇 THIS MONEY COULD BE YOURS 👇<br><br>90K in one month... 
+</h1>
+<img src="@/assets/biggest.png" alt="">
+<h3>Biggest payout in E8 Funded history from one account</h3>
 <p>
   Here’s the deal: funded accounts allow you to scale your trading without needing years of savings or a massive bank account. All you need is discipline, strategy, and consistency—the exact traits you’ve been working on. Stop limiting your growth by sticking to small accounts. Use their money, trade smart, and keep the profits. The only thing standing between you and a funded account is action. So, why not take it right now?
-</p>
+</p> 
 <div class="cards"> 
  <div>
   <h3> ↓ Best CRYPTO prop ↓</h3>
@@ -239,7 +244,9 @@
 
 
 <style lang="scss" scoped>
-
+.cards, .cards + p {
+    text-align: center;
+}
 .amateur-guide {
   color: white;
   display: flex;

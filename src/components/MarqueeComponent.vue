@@ -144,6 +144,7 @@ export default {
 }
 
 .card {
+  height: 240px;
   max-width: 500px;
   display: flex;
   flex-direction: column;
