@@ -54,16 +54,6 @@
         <div class="step" v-for="(step, index) in steps" :key="index">
           <div class="step-number">{{ index + 1 }}</div>
           <div class="step-content">
-            <!-- <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" stroke="#FFC107" stroke-width="2" />
-              <path
-                d="M12 7v5l3 3"
-                stroke="#FFC107"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg> -->
             <p>{{ step }}</p>
           </div>
         </div>
@@ -153,6 +143,17 @@ export default {
         scrollTrigger: {
           trigger: '.middle',
           start: 'top 80%',
+        },
+      })
+      gsap.from('.roadmap .step', {
+        opacity: 0,
+        duration: 0.5,
+        delay: 2.5, // Затримка 0.5 секунди після карток
+        ease: 'power3.out',
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: '.roadmap',
+          start: 'top 30%',
         },
       })
     })

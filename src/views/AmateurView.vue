@@ -1,5 +1,34 @@
 <template>
   <div class="amateur-guide">
+
+
+    <h2>Understanding Liquidity and Order Flow: The Core of Market Movement</h2>
+<p>
+  Liquidity is the lifeblood of the market—it’s what drives every price movement. Without liquidity, there would be no buyers for sellers, and no sellers for buyers. At its core, price moves to areas of high liquidity, where Smart Money can execute large trades efficiently. Learning to identify liquidity pools, such as stop-loss clusters or unfilled limit orders, allows you to predict where the market is likely to move next.
+</p>
+<img src="@/assets/liq.png" alt="">
+<p>
+  Why focus on liquidity?
+
+  <ul>
+    <li><b>It reveals the market's intentions:</b> Smart Money targets liquidity to fill their positions. Recognizing these liquidity sweeps helps you trade in alignment with their moves, rather than being caught off guard.</li>
+    <li><b>It explains manipulation:</b> Sudden spikes or drops in price often occur not because of fundamental news, but to hunt liquidity and fuel future moves.</li>
+    <li><b>It defines key levels:</b> Liquidity zones, such as highs, lows, or fair value gaps, act as magnets for price, providing reliable entry and exit points.</li>
+  </ul>
+</p>
+<img src="@/assets/of.png" alt="">
+<p>
+  Alongside liquidity, understanding order flow is crucial for validating and supporting price movements. Order flow refers to the buying and selling activity that sustains market trends. By studying order flow through tools like volume profiles, delta, or footprint charts, you gain insights into:
+  <ul>
+    <li><b>Market strength:</b> Strong buying or selling pressure confirms the sustainability of a price move.</li>
+    <li><b>Reversals:</b> Shifts in order flow, such as decreasing buy volume in an uptrend, signal potential turning points.</li>
+    <li><b>Momentum confirmation:</b> Observing continuous aggressive orders (market buys or sells) indicates that the market is likely to continue in its current direction.</li>
+  </ul>
+</p>
+<p>
+  Mastering liquidity and order flow transforms how you view the market. Instead of reacting to price movements, you anticipate them, trading with the confidence that comes from understanding the forces driving the market.
+</p>
+
     <h2>1. Master Risk Management: Trade Like Smart Money</h2>
     <p>
       Risk management is the foundation of successful trading. Think of it this way: Smart Money—the big players—don't take reckless risks. They strategically hunt liquidity and protect their positions. Why shouldn't you do the same? 
@@ -174,7 +203,26 @@
     </p>
     <img src="@/assets/premium.png" alt="">
 
-    <h2>6. Higher Timeframes always more important</h2>
+    <h2>6. Why I Don’t Use Order Blocks but Only Breaker Blocks</h2>
+<p>
+  In trading, I prioritize breaker blocks over traditional order blocks. While both concepts are rooted in price manipulation, breaker blocks provide a clearer, more reliable entry point during periods of market manipulation. 
+</p>
+<p>
+  Here's why breaker blocks outperform order blocks:
+  <ul>
+    <li><b>Direct manipulation signal:</b> Breaker blocks form when price breaks through a support or resistance level, sweeps liquidity, and then retests the broken level. This indicates that Smart Money has actively manipulated the market to create liquidity, providing a stronger confirmation of intent compared to standard order blocks.</li>
+    <li><b>Higher accuracy in entries:</b> Order blocks often rely on zones that could be tested multiple times, leading to potential false entries. Breaker blocks, however, are defined by clear reversals after liquidity sweeps, allowing for more precise trade placement.</li>
+    <li><b>Aligned with manipulation strategies:</b> Trading breaker blocks ensures that you're entering positions in alignment with Smart Money moves, taking advantage of liquidity grabs rather than trading against them.</li>
+    <li><b>Improved risk-reward ratio:</b> Because breaker blocks form at points of confirmed reversals, stop-losses can be placed tighter, and targets can be set with greater confidence, resulting in better risk-reward ratios.</li>
+  </ul>
+</p>
+<img src="@/assets/bb1.png" alt="">
+<img src="@/assets/bb2.png" alt="">
+<p>
+  In summary, while order blocks are a useful concept, breaker blocks provide a sharper edge by focusing on the intentional manipulative moves of Smart Money. By trading in the direction of these moves, you align yourself with the market's true flow, increasing the probability of success.
+</p>
+
+    <h2>7. Higher Timeframes always more important</h2>
     <p>
       Beginners often focus on lower timeframes, thinking they’ll find more opportunities. In reality, higher timeframes provide clarity and direction. A weekly chart can tell you where the market is headed, while a 1-minute chart just adds noise.
     </p>
@@ -191,7 +239,7 @@
       The bigger the timeframe, the more reliable the information. Don’t trade against the larger trend.
     </p>
 
-    <h2>7. Keep a Trading Journal: Your Key to Improvement</h2>
+    <h2>8. Keep a Trading Journal: Your Key to Improvement</h2>
     <p>
       A trading journal isn’t optional—it’s essential. Without one, you’re flying blind. I use my journal to track every trade, analyze mistakes, and refine my strategy.
     </p>
@@ -209,7 +257,7 @@
       Reviewing your journal will highlight what works and what doesn’t. It’s your roadmap to consistent improvement.
     </p>
 
-    <h2>8. Manage Expectations: 60% Win Rate Is Enough</h2>
+    <h2>9. Manage Expectations: 60% Win Rate Is Enough</h2>
     <p>
       Many traders think they need to win every trade. The truth is, even a 60% win rate is enough to be highly profitable if you manage your risk-reward ratio correctly. For every 10 trades, winning 6 with a 1:2 ratio keeps you ahead.
     </p>
@@ -218,7 +266,7 @@
       Focus on probabilities, not perfection. Trading is a numbers game, and consistency beats short-term wins.
     </p>
 
-    <h2>9. Don’t Watch Your Trades</h2>
+    <h2>10. Don’t Watch Your Trades</h2>
     <p>
       Sitting and watching your trades unfold is a recipe for emotional decisions. Once your trade is live, trust your plan and walk away. Let the market do its job while you focus on other things.
     </p>
@@ -227,14 +275,14 @@
       This approach reduces stress, prevents micromanagement, and helps you stick to your strategy.
     </p>
 
-    <h2>10. Patience </h2>
+    <h2>11. Patience </h2>
     <p>
       The market will always be there. Rushing into trades or chasing setups only leads to losses. Develop patience, wait for the market to align with your plan, and only act when the conditions are ideal.
     </p>
     <p>
       Successful trading isn’t about activity—it’s about execution. Wait for the perfect moment, and strike with confidence. I remind you - do not use a market order, only limit orders for best prices.
     </p>
-    <h2>11. Use Neutral Colors for Your Charts and Hide Your PnL</h2>
+    <h2>12. Use Neutral Colors for Your Charts and Hide Your PnL</h2>
 <p>
   The colors you use for your charts can have a surprising impact on your psychology. Bright reds and greens might seem natural for indicating losses and gains, but they can also trigger emotional responses, leading to impulsive decisions. Neutral colors, like shades of gray, blue, or muted tones, keep your mind focused on the analysis rather than emotional reactions.
 </p>
@@ -248,16 +296,19 @@
   <img src="@/assets/colors.png" alt="">
   Trade the idea, not the money. The market doesn’t care about your emotions, and neither should you. Stick to your plan, execute your strategy, and let the results take care of themselves.
 </p>
-<h2>12. If You Think You’re Ready, Why Aren’t You Funded Yet?</h2>
+
+
+<h2>13. If You Think You’re Ready, Why Aren’t You Funded Yet?</h2>
 <p>
-  Let’s get real for a moment. If you’ve been nodding your head, thinking you already know all this, but you’re still trading with your own limited capital—what are you waiting for? Getting funded is the next step to leveling up your trading game. Imagine having access to $50,000, $100,000, or more, without risking your own hard-earned money. 
+  Imagine having access to $50,000, $100,000, or more, without risking your own hard-earned money. 
 </p>
-<h1>👇 THIS MONEY COULD BE YOURS 👇<br><br>90K in one month... 
+<h1 class="money">👇 THIS MONEY COULD BE YOURS 👇<br><br>90K in one month... 
 </h1>
 <img src="@/assets/biggest.png" alt="">
 <h3>Biggest payout in E8 Funded history from one account</h3>
 <p>
-  Here’s the deal: funded accounts allow you to scale your trading without needing years of savings or a massive bank account. All you need is discipline, strategy, and consistency—the exact traits you’ve been working on. Stop limiting your growth by sticking to small accounts. Use their money, trade smart, and keep the profits. The only thing standing between you and a funded account is action. So, why not take it right now?
+ The only thing standing between you and a funded account is <b>ACTION</b>. 
+ <br><br> Stop waiting - <span class="gradient">change your life right now</span>
 </p> 
 <div class="cards"> 
  <div>
@@ -291,6 +342,14 @@
 }
 .cards, .cards + p {
     text-align: center;
+}
+.money {
+  font-size: 2.5em;
+}
+.gradient{ 
+  background: -webkit-linear-gradient(#00ffdd, #286817);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .amateur-guide {
   color: white;
@@ -444,4 +503,6 @@ iframe {
   color: #ffc107;
   margin-bottom: 10px;
 }
+
+
 </style>
