@@ -164,7 +164,7 @@
     <h1>Choose the Right Trading Approach for Your Personality</h1>
     <p>Your trading approach should fit your mindset. Here are three types to consider:</p>
 
-    <h2>7. Intraday Trading: Mastering the Day ⏰</h2>
+    <h2>7. Intraday Trading ⏰</h2>
     <p>
       If you like quick, fast-paced trades, <b>intraday trading</b> might be your style. I tried it and
       learned it’s all about focus and quick decisions. For example, if I buy a coin at $50, I might aim to
@@ -188,7 +188,7 @@
     </p>
     <img src="@/assets/swing.png" alt="" />
 
-    <h2>9. Trend Following: Trend is your friend 📈</h2>
+    <h2>9. Trend Following</h2>
     <p>
       Some traders focus only on following long-term trends and avoid the short-term noise altogether. With
       <b>trend following</b>, you wait for a clear, established trend on higher timeframes (like the weekly),
@@ -201,7 +201,7 @@
 
     <img src="@/assets/trend.png" alt="" />
 
-    <h2>10. The Power of a Trading Journal: Your Guide to Growth 📝</h2>
+    <h2>10. The Power of a Trading Journal</h2>
     <p>
       In trading, success often comes down to one word: consistency. And the best way to achieve consistency
       is through a well-maintained trading journal. Why? Because without tracking your trades, you’re flying
@@ -289,7 +289,7 @@ export default {
   align-items: center;
   gap: 36px;
   padding: 12px;
-  max-width: 85%;
+  max-width: 90%;
 }
 .position-size-calculator {
   display: flex;

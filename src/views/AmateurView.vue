@@ -99,6 +99,48 @@
       Trade with the trend and capitalize on stop-hunting instead of fearing it.
     </p>
 
+    <div class="video-gallery">
+  <h2>Advanced Trading Insights 🎯</h2>
+  <div class="video-wrapper">
+    <!-- Stop Hunting -->
+    <div class="video-card">
+      <h3>Stop Hunting</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VtSh_9eoW0U"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Trading Psychology -->
+    <div class="video-card">
+      <h3>Trading Psychology</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/xoGOZD7-3gY"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Cognitive Biases -->
+    <div class="video-card">
+      <h3>Defining Trading BIAS</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/1yJHDc9HNh0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+
     <h2>4. Trading Hours: When Smart Money Works</h2>
     <p>
       One of the best decisions I made was limiting my trading hours. I focus exclusively on the London and New York sessions. Why? These are the times when Smart Money is most active, creating the highest liquidity and volatility.
@@ -244,6 +286,9 @@
 
 
 <style lang="scss" scoped>
+*{ 
+  box-sizing: border-box;
+}
 .cards, .cards + p {
     text-align: center;
 }
@@ -255,7 +300,7 @@
   align-items: center;
   gap: 36px;
   padding: 12px;
-  max-width: 85%;
+  max-width: 90%;
   font-family: Arial, sans-serif;
 
   .cards {
@@ -355,5 +400,48 @@
       opacity: 1;
     }
   }
+}
+.video-gallery {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #d6d6d6;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 85%;
+}
+
+.video-gallery h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-card {
+  background-color: #292929;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 560px;
+  width: 100%;
+}
+iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  height: auto;
+}
+
+.video-card h3 {
+  font-size: 1.2rem;
+  color: #ffc107;
+  margin-bottom: 10px;
 }
 </style>
