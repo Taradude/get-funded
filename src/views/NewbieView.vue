@@ -2,18 +2,23 @@
   <div class="newbie">
     <h2>1. Get Started with Binance - Save on Fees with my LINK!</h2>
     <p>
-      When I first started trading, I didn’t realize how much those small fees would chip away at my profits
-      🪙. Every trade takes a bit, and they add up fast. That’s why I suggest
-      <b>registering on Binance using my exclusive link</b> to take advantage of a
-      <b>discount on trading fees</b>. Think of it as setting yourself up for the long haul – every dollar
-      saved is a dollar you can reinvest. Trading is challenging enough without extra costs, so get that edge
-      early! <br /><br />Even if you're already registered but don’t have any discounts, it’s worth creating a
-      <b>new account</b>
-      if you’re planning to make real profits in crypto. Imagine this: with the average trading fee on Binance
-      at 0.1% per trade, my link gives you a discount that can <b>SAVE YOU $200-$500 A YEAR</b> if you are a
-      small trader.
+      Small trading fees add up fast and eat into your profits. Save on Binance fees with my exclusive link
+      and reinvest what you save. Even if you’re already registered, creating a new account with discounts
+      could save you $200–$500 annually, even as a small trader. Don’t leave money on the table—trade smarter!
     </p>
     <a href="https://accounts.binance.com/register?ref=18019829">Money Saved = Money Earned</a>
+
+    <h2>Best book to understand YOURSELF</h2>
+    <div class="book">
+      <p>Free online book</p>
+      <a href="http://dl.fxf1.com/books/english/Trading_in_the_Zone.pdf">
+        <img src="@/assets/zone.png" alt="" />
+      </a>
+      <p>
+        Books won't teach you how to trade, they're usually very outdated and out of date. But this one will
+        help you see yourself from the outside and avoid many stupid mistakes.
+      </p>
+    </div>
 
     <h2>2. The Power of Risk Management: Use the 1-2% Rule</h2>
     <p>
@@ -386,5 +391,24 @@ iframe {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   max-width: 100%;
   height: auto;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 60%;
+  padding: 20px;
+  a {
+    animation: none;
+  }
+  img {
+    max-width: 50%;
+  }
+  p {
+    text-align: center;
+  }
 }
 </style>

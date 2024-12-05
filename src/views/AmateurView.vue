@@ -344,6 +344,7 @@
     text-align: center;
 }
 .money {
+ text-align: center;
   font-size: 2.5em;
 }
 .gradient{ 

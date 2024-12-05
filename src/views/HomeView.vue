@@ -137,7 +137,7 @@ export default {
       gsap.from('.middle .card-wrap img', {
         opacity: 0,
         duration: 0.5,
-        delay: 2.5, // Затримка 0.5 секунди після карток
+        delay: 1.5, // Затримка 0.5 секунди після карток
         ease: 'power2.out',
         stagger: 0.3,
         scrollTrigger: {
@@ -147,7 +147,7 @@ export default {
       })
       gsap.from('.roadmap .step', {
         opacity: 0,
-        duration: 0.5,
+        duration: 0.3,
         delay: 2.5, // Затримка 0.5 секунди після карток
         ease: 'power3.out',
         stagger: 0.3,
