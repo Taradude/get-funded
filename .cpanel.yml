@@ -1,0 +1,9 @@
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/millionf/public_html
+    - echo "Starting deployment..."
+    - /opt/alt/python3.8/bin/python3.8 -m ensurepip --upgrade
+    - cd $DEPLOY_PATH
+    - npm install
+    - npm run build
+    - echo "Deployment finished successfully."
